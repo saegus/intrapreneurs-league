@@ -107,7 +107,8 @@
       <div class="saegus-lp-md-spacer"></div>
       <div
         class="saegus-app-container saegus-app-container-row col-12 saegus-app-text-justify-center">
-        <app-tile-image class="['secondary']" src="'/assets/images/IMG_4892.JPG'">
+        <app-tile-image class="['secondary']"
+          [src]="environnement.production ? 'assets/images/IMG_4892.JPG' : '/assets/images/IMG_4892.JPG'">
           <p>
             Préparer un pitch, comprendre sa cible et son marché, dynamiser l’idéation, concrétiser le résultat d’un
             hackathon… Echangez avec Pierre, l’un de nos coachs Intracubation© !
@@ -161,15 +162,15 @@
                <div
                  class="col-9 saegus-app-container saegus-app-container-row saegus-app-container-justify-space-around saegus-lp-who-are-we saegus-lp-row-to-column-mobile">
                  <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center">
-                   <app-circle-img [src]="'/assets/images/IMG_4892.JPG'"></app-circle-img>
+                   <app-circle-img [src]="environnement.production ? 'assets/images/IMG_4892.JPG' : '/assets/images/IMG_4892.JPG'"></app-circle-img>
                    <span class="image-caption">Pierre</span>
                  </div>
                  <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center">
-                   <app-circle-img [src]="'/assets/images/IMG_4853.JPG'"></app-circle-img>
+                   <app-circle-img [src]="environnement.production ? 'assets/images/IMG_4853.JPG' : '/assets/images/IMG_4853.JPG'"></app-circle-img>
                    <span class="image-caption">Hadi</span>
                  </div>
                  <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center">
-                   <app-circle-img [src]="'/assets/images/IMG_3532.JPG'"></app-circle-img>
+                   <app-circle-img [src]="environnement.production ? 'assets/images/IMG_3532.JPG' : '/assets/images/IMG_3532.JPG'"></app-circle-img>
                    <span class="image-caption">Chloé</span>
                  </div>
                </div>
@@ -180,9 +181,9 @@
                  <h4>Nos clients</h4>
                </div>
                <div class="col-9 saegus-app-container saegus-app-container-row saegus-app-container-justify-space-around saegus-app-container-align-items-center saegus-lp-row-to-column-mobile">
-                 <img class="client-image" src="/assets/images/loreal.png"/>
-                 <img class="client-image" src="/assets/images/orange.png"/>
-                 <img class="client-image" src="/assets/images/thales.png"/>
+                 <img class="client-image" [src]="environnement.production ? 'assets/images/loreal.png' : '/assets/images/loreal.png'"/>
+                 <img class="client-image" [src]="environnement.production ? 'assets/images/orange.png' : '/assets/images/orange.png'"/>
+                 <img class="client-image" [src]="environnement.production ? 'assets/images/thales.png' : '/assets/images/thales.png'"/>
                </div>
              </div>
  
