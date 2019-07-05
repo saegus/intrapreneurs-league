@@ -6,7 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./tile.component.scss']
 })
 export class TileComponent implements OnInit {
-  @Input() class : [];
+  @Input() class : string;
+  @Input() position : string;
+
   constructor() { }
 
   ngOnInit() {

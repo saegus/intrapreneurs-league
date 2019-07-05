@@ -9,7 +9,7 @@
       'saegus-app-container': true
     }">
     <div class="col-6">
-      <app-tile [class]="[point.displayAs, 'timeline-left']" *ngFor="let point of p.left; let j = index">
+      <app-tile [class]="point.displayAs" [position]="'timeline-left'" *ngFor="let point of p.left; let j = index">
         <div class="col-12 saegus-app-text-justify-center saegus-app-container-justify-center">
           <h3 class="saegus-lp-body--contrast"> {{ point.title }} </h3>
           <img class="saegus-lp-tile-logo" [src]="point.logo" *ngIf="point.logo" />
@@ -32,7 +32,7 @@
     }">
     <div class="col-6">
       <app-tile 
-        [class]="[point.displayAs, 'timeline-right']"
+        [class]="point.displayAs" [position]="'timeline-right'"
         *ngFor="let point of p.right; let l = index">
         <div class="col-12 saegus-app-text-justify-center saegus-app-container-justify-center">
           <h3 class="saegus-lp-body--contrast"> {{ point.title }} </h3>

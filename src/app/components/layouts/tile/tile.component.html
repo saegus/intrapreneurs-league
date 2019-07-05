@@ -1,11 +1,11 @@
 <div
   [ngClass]="{
-    'saegus-lp-tile--timeline-left': class[1] == 'timeline-left',
-    'saegus-lp-tile--timeline-right': class[1] == 'timeline-right',
+    'saegus-lp-tile--timeline-left': position == 'timeline-left',
+    'saegus-lp-tile--timeline-right': position == 'timeline-right',
     'saegus-lp-tile': true,
-    'saegus-lp-tile--primary': class[0] == 'primary',
-    'saegus-lp-tile--secondary': class[0] =='secondary',
-    'saegus-lp-tile--third': class[0] == 'third'
+    'saegus-lp-tile--primary': class == 'primary',
+    'saegus-lp-tile--secondary': class =='secondary',
+    'saegus-lp-tile--third': class == 'third'
     }"
   >
   <ng-content></ng-content>
