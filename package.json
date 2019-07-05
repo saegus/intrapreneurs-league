@@ -1,7 +1,7 @@
 {
   "name": "saegus-intracubation",
   "version": "0.0.0",
-  "homepage": "https://github.com/saegus/intrapreneurs-league",
+  "homepage": "https://saegus.github.io/intrapreneurs-league",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
