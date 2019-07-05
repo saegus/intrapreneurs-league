@@ -1,0 +1,10 @@
+@import '../../../../scss/colors.scss';
+
+.saegus-lp-jumbo-tile {
+  -webkit-box-shadow: 2px 3px 6px 0px rgba(181, 177, 181, 1);
+  -moz-box-shadow: 2px 3px 6px 0px rgba(181, 177, 181, 1);
+  box-shadow: 2px 3px 6px 0px rgba(181, 177, 181, 1);
+
+  background: $secondary-color;
+  padding: 2em;
+}

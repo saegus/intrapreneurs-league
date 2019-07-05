@@ -1,0 +1,50 @@
+@import '../../../scss/colors.scss';
+
+.saegus-lp-header-logo {
+  padding: 0 3em;
+  svg {
+    height: 8em;
+  }
+}
+.saegus-lp-testimonials {
+  p {
+    text-align: center;
+  }
+}
+
+:host ::ng-deep .saegus-lp-tile {
+  margin: 1em;
+  .col-12 {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.image-caption {
+  margin: 1em 0;
+}
+:host ::ng-deep .saegus-lp-who-are-we .saegus-lp-circle-img {
+  width: 5em;
+  height: 5em;
+}
+.saegus-lp-testimonials-container {
+  display: flex;
+}
+.saegus-lp-testimonials--quote {
+  width: 5em;
+  display: flex;
+  &:first-child {
+    align-self: flex-start;
+  } 
+  &:last-child {
+    align-self: flex-end;
+    transform: rotateZ(180deg);
+  }
+}
+
+:host ::ng-deep .saegus-lp-testimonials--quote {
+  svg {
+    fill: $third-color !important;
+  }
+}

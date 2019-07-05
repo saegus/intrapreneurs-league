@@ -1,0 +1,11 @@
+<div
+  [ngClass]="{
+    'saegus-lp-layout': true,
+    'saegus-lp-layout--primary': class == 'primary',
+    'saegus-lp-layout--secondary': class == 'secondary',
+    'saegus-lp-layout--third': class == 'third'
+  }">
+  <div class="saegus-lp-layout-container">
+    <ng-content></ng-content>
+  </div>
+</div>

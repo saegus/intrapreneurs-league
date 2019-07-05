@@ -1,0 +1,8 @@
+<button [ngClass]="{
+  'saegus-lp-button':true,
+  'saegus-lp-button--primary': class == 'primary',
+  'saegus-lp-button--secondary': class == 'secondary',
+  'saegus-lp-button--third': class == 'third'
+}">
+  <ng-content></ng-content>
+</button>

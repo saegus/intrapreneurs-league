@@ -1,0 +1,160 @@
+@import './scss/colors.scss';
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: 'OpenSans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Gilroy';
+  font-weight: bold;
+}
+
+p {
+  text-align: justify;
+}
+
+ol {
+  font-size: .8em;
+  list-style: none;
+  counter-reset: li;
+  text-align: left;
+  li:last-child {
+    padding-bottom: 0;
+  }
+  li {
+    counter-increment: li;
+    padding-bottom: 1em;
+  }
+  li::before {
+    content: counter(li) ".";
+    color: $third-color;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em
+  }
+}
+
+.saegus-lp-body--contrast {
+  color: $secondary-color;
+}
+
+.saegus-app-container {
+  display: flex;
+}
+
+.saegus-app-container-row {
+  flex-direction: row;
+}
+
+.saegus-app-container-column {
+  flex-direction: column;
+};
+
+.saegus-app-container-justify-center {
+  justify-content: center;
+};
+
+.saegus-app-container-align-items-center {
+  align-items: center;
+};
+
+.saegus-app-text-justify-center {
+  text-align: center;
+};
+
+.saegus-app-justify-start {
+  justify-content: flex-start;
+};
+
+.saegus-app-justify-end {
+  justify-content: flex-end;
+};
+
+.saegus-app-container-justify-space-around {
+  justify-content: space-around;
+};
+.saegus-app-container-justify-space-between {
+  justify-content: space-between;
+};
+
+.col-12 {
+  width: #{(12 * 100 / 12) + '%'}
+};
+.col-11 {
+  width: #{(11 * 100 / 12) + '%'}
+}
+.col-10 {
+  width: #{(10 * 100 / 12) + '%'}
+}
+.col-9 {
+  width: #{(9 * 100 / 12) + '%'}
+}
+.col-8 {
+  width: #{(8 * 100 / 12) + '%'}
+}
+.col-7 {
+  width: #{(7 * 100 / 12) + '%'}
+}
+.col-6 {
+  width: #{(6 * 100 / 12) + '%'}
+}
+.col-5 {
+  width: #{(5 * 100 / 12) + '%'}
+}
+.col-4 {
+  width: #{(4 * 100 / 12) + '%'}
+}
+.col-3 {
+  width: #{(3 * 100 / 12) + '%'}
+}
+.col-2 {
+  width: #{(2 * 100 / 12) + '%'}
+}
+.col-1 {
+  width: #{(1 * 100 / 12) + '%'}
+}
+
+.saegus-app-padding {
+  padding: 2em 3em;
+}
+
+.saegus-lp-margin-default {
+  margin: 1em;
+}
+
+.saegus-lp-lg-spacer {
+  margin: 4em 0;
+}
+
+.saegus-lp-md-spacer {
+  margin: 2em 0;
+}
+
+.saegus-lp-sm-spacer {
+  margin: 1em 0;
+}
+
+svg,
+.saegus-lp-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.saegus-lp-header-logo--container {
+  height: 8em;
+}
+
+.saegus-lp-no-padding {
+  padding: 0 !important;
+}
+
+.saegus-lp-footer {
+
+}

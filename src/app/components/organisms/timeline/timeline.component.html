@@ -1,0 +1,51 @@
+<div class="saegus-app-container saegus-app-container-row col-12 saegus-app-container-align-items-center saegus-timeline"
+  *ngFor="let p of elements; let i = index">
+  <div 
+    [ngClass]="{
+      'col-6': true,
+      'saegus-lp-timeline-left': true,
+      'saegus-app-container-column': true,
+      'saegus-app-container-align-items-center': true,
+      'saegus-app-container': true,
+      'saegus-lp-timeline-border-right': p.right.length <= p.left.length
+    }">
+    <div class="col-6">
+      <app-tile [class]="[point.displayAs, 'timeline-left']" *ngFor="let point of p.left; let j = index">
+        <div class="col-12 saegus-app-text-justify-center saegus-app-container-justify-center">
+          <h3 class="saegus-lp-body--contrast"> {{ point.title }} </h3>
+          <img class="saegus-lp-tile-logo" [src]="point.logo" *ngIf="point.logo" />
+          <ol *ngIf="point.type == 'list'">
+            <li *ngFor="let x of point.values; let k = index">
+              {{ x }}
+            </li>
+          </ol>
+        </div>
+      </app-tile>
+    </div>
+  </div>
+  <div 
+    [ngClass]="{
+    'col-6': true,
+    'saegus-lp-timeline-right': true,
+    'saegus-app-container-column': true,
+    'saegus-app-container-align-items-center': true,
+    'saegus-app-container': true,
+    'saegus-lp-timeline-border-left': p.left.length <= p.right.length
+    }">
+    <div class="col-6">
+      <app-tile 
+        [class]="[point.displayAs, 'timeline-right']"
+        *ngFor="let point of p.right; let l = index">
+        <div class="col-12 saegus-app-text-justify-center saegus-app-container-justify-center">
+          <h3 class="saegus-lp-body--contrast"> {{ point.title }} </h3>
+          <img class="saegus-lp-tile-logo" [src]="point.logo" *ngIf="point.logo" />
+          <ol *ngIf="point.type == 'list'">
+            <li *ngFor="let x of point.values; let m = index">
+              {{ x }}
+            </li>
+          </ol>
+        </div>
+      </app-tile>
+    </div>
+  </div>
+</div>

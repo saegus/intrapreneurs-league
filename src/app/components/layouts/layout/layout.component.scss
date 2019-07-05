@@ -1,0 +1,23 @@
+@import '../../../../scss/colors.scss';
+
+.saegus-lp-layout {
+  width: 100%;
+  padding: 3em 8em;
+  display: flex;
+  justify-content: center;
+  &--primary {
+    background: $primary-bg-color;
+  }
+  &--secondary {
+    background: $secondary-bg-color;
+  }
+  &--third {
+    background: $third-bg-color;
+  }
+  &-container {
+    max-width: 1140px;
+    width: 100%;
+  }
+
+
+}

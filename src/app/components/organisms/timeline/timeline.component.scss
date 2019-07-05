@@ -1,0 +1,70 @@
+@import '../../../../scss/colors.scss';
+
+:host ::ng-deep .saegus-lp-tile {
+
+  .saegus-lp-tile-logo {
+    height: 3em;
+  }
+  
+  position: relative;
+  margin: 1em 0;
+  padding: .5em !important;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+  }
+
+  &--timeline-right:before {
+    width: 1em;
+    height: 1em;
+    background-color: $primary-color;
+    border-radius: 100%;
+    top: 50%;
+    left: calc(-50% - .5em);
+  }
+
+  &--timeline-right:after {
+    width: 2em;
+    height: 3px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: $primary-color;
+    top: calc(50% + 0.4em);
+    left: calc(-50% - .5em );
+  }
+  &--timeline-left:before {
+    width: 1em;
+    height: 1em;
+    background-color: $primary-color;
+    border-radius: 100%;
+    top: 50%;
+    right: calc(-50% - .5em);
+  }
+
+  &--timeline-left:after {
+    width: 2em;
+    height: 3px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: $primary-color;
+    top: calc(50% + 0.4em);
+    right: calc(-50% - .5em );
+  }
+}
+
+.saegus-timeline {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    bottom: -20px;
+    width: 1px;
+    border-left: dashed $primary-color;
+    transform: translateX(-2px);
+  }
+}

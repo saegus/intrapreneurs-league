@@ -1,0 +1,21 @@
+.saegus-lp-tile-image {
+  position: relative;
+}
+
+
+:host ::ng-deep {
+  .saegus-lp-circle-img {
+    position: absolute;
+    top: calc(50% - 5em);
+    // left: -4em;
+    left: 0;
+    -webkit-box-shadow: 2px 3px 6px 0px rgba(181, 177, 181, 1);
+    -moz-box-shadow: 2px 3px 6px 0px rgba(181, 177, 181, 1);
+    box-shadow: 2px 3px 6px 0px rgba(181, 177, 181, 1);
+  }
+  .saegus-lp-tile {
+    margin-left: 5em;
+    padding-left: 8em !important;
+    padding-right: 8em !important;
+  }
+}

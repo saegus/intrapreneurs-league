@@ -1,0 +1,178 @@
+<div class="saegus-lp-container">
+  <app-layout [class]="'primary'">
+    <div class="saegus-lp-header-logo saegus-app-container saegus-app-container-row col-12 saegus-app-justify-start">
+      <div class="saegus-lp-header-logo--container">
+        <div class="saegus-lp-svg" aria-label="il-logo" [inlineSVG]="'/assets/images/IL-BLANC.svg'"></div>
+        <div class="saegus-lp-sm-spacer"></div>
+        <i class="saegus-lp-body--contrast">Lorem ipsum pour baseline</i>
+      </div>
+    </div>
+    <div class="saegus-lp-lg-spacer"></div>
+    <div class="saegus-app-container saegus-app-container-row col-12">
+      <div class="saegus-lp-body saegus-lp-body--contrast col-6 saegus-app-padding">
+        <h2>
+          Donnez vie à vos idées innovantes<br/>en moins de 3 mois
+        </h2>
+        <span>Notre promesse ? Donner aux intrapreneurs les moyens de concrétiser rapidement leurs idées.</span>
+        <div class="saegus-lp-md-spacer"></div>
+        <app-button [class]="'secondary'">
+          Contactez un coach
+        </app-button>
+      </div>
+      <div class="saegus-lp-body saegus-lp-body--contrast col-6 saegus-app-padding saegus-lp-no-padding">
+        <div class="saegus-lp-svg" aria-label="il-logo" [inlineSVG]="'/assets/images/illustration_1.svg'"></div>
+      </div>
+    </div>
+  </app-layout>
+  <app-layout [class]="'secondary'">
+    <div class="saegus-app-container saegus-app-container-row">
+      <div class="saegus-lp-body col-6 saegus-app-padding">
+        <h2>
+          Tout le monde peut devenir <br /> un intrapreneur.
+        </h2>
+        <span>
+          <p>
+            C’est au travers de nos propres expériences intrapreneuriales que nous nous sommes forgés cette conviction :
+            qui
+            mieux que les personnes qui vivent et côtoient les problèmes pour les résoudre ?
+          </p>
+          <p>
+            Bien que porteurs de vision, les intrapreneurs ont besoin d’aide dans leur exécution, aussi bien en termes de
+            méthodologie que d’outillage : c’est pour cela que nous avons créé l’Intrapreneurs League.
+          </p>
+        </span>
+      </div>
+      <div class="saegus-lp-body col-6 saegus-app-padding">
+        <h2>
+          L’Intrapreneurs League,<br />c’est quoi ?
+        </h2>
+        <span>
+          <p>
+            C’est une équipe de coachs, qui a développé une méthode – l’Intracubation© - destinée à cadencer, accélérer
+            et outiller toutes les phases de conception de nouveaux produits & services par vos intrapreneurs : de
+            l’idéation au passage à l’échelle, en passant par la priorisation et le co-financement des initiatives.
+          </p>
+        </span>
+      </div>
+    </div>
+  </app-layout>
+  <app-layout [class]="'third'">
+    <div class="saegus-app-container saegus-app-container-column">
+      <h2 class="saegus-app-text-justify-center col-12">
+        Nous l’avons vécu … et nous l’avons résolu
+      </h2>
+      <div class="saegus-app-container saegus-app-container-row col-12 saegus-app-text-justify-center saegus-lp-testimonials">
+          <app-tile
+            [class]="['secondary']"
+            *ngFor="let testimonial of testimonials"
+          >
+            <div class="col-12 saegus-app-text-justify-center">
+              <div class="saegus-lp-testimonials-container">
+                <div class="saegus-lp-svg saegus-lp-testimonials--quote" aria-label="il-logo" [inlineSVG]="'/assets/images/quote.svg'"></div>
+                <p>{{ testimonial.value }}</p>
+                <div class="saegus-lp-svg saegus-lp-testimonials--quote" aria-label="il-logo" [inlineSVG]="'/assets/images/quote.svg'"></div>
+              </div>
+            </div>
+          </app-tile>
+      </div>
+    </div>
+  </app-layout>
+
+  <app-layout [class]="'secondary'">
+    <div class="saegus-app-container saegus-app-container-column">
+      <h2 class="saegus-app-text-justify-center col-12">
+        Testez notre démarche !<br />
+        Une heure de coaching gratuite avec un membre de notre équipe
+      </h2>
+      <div
+        class="saegus-app-container saegus-app-container-row col-12 saegus-app-text-justify-center">
+        <app-tile-image class="['secondary']" src="'/assets/images/IMG_4892.JPG'">
+          <p>
+            Préparer un pitch, comprendre sa cible et son marché, dynamiser l’idéation, concrétiser le résultat d’un
+            hackathon… Echangez avec Pierre, l’un de nos coachs Intracubation© !
+            <br /><br />
+            Une heure de coaching pour repartir avec quelques tips qui vont aideront à accélérer vos projets.
+            L’occasion de nous rencontrer et de découvrir notre démarche Intrapreneurs League.
+          </p>
+        </app-tile-image>
+      </div>
+
+      <div class="saegus-lp-lg-spacer"></div>
+
+      <h2 class="saegus-app-text-justify-center col-12">
+        Une démarche créée sur-mesure pour accélérer <br/> votre projet intrapreneurial
+      </h2>
+      <div class="saegus-lp-md-spacer"></div>
+
+      <app-timeline [elements]="timeline"></app-timeline>
+    </div>
+  </app-layout>
+
+   <app-layout [class]="'third'">
+    <div class="saegus-app-container saegus-app-container-column col-12 saegus-app-container-align-items-center">
+      <div class="col-10">
+        <app-jumbo-tile>
+          <div class="saegus-app-container saegus-app-container-column">
+            <h2 class="saegus-app-text-justify-center col-12">Qui sommes nous ?<br /> 👀</h2>
+            <div class="col-12 saegus-app-container saegus-app-container-row saegus-app-container-align-items-center">
+              <div class="col-3">
+                <h4>Notre passion</h4>
+              </div>
+              <div class="col-9">
+                <p> Nous sommes des coachs, des intrapreneurs, des experts de l’Agile, du Design Thinking ou encore du
+                  Lean Start-up, capables de choisir pour chaque contexte la meilleure méthodologie et les bons outils.
+                </p>
+              </div>
+            </div>
+            <div class="saegus-lp-sm-spacer"></div>
+            <div class="col-12 saegus-app-container saegus-app-container-row saegus-app-container-align-items-center">
+              <div class="col-3">
+                <h4>Notre team</h4>
+              </div>
+              <div
+                class="col-9 saegus-app-container saegus-app-container-row saegus-app-container-justify-space-around saegus-lp-who-are-we">
+                <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center">
+                  <app-circle-img [src]="'/assets/images/IMG_4892.JPG'"></app-circle-img>
+                  <span class="image-caption">Pierre</span>
+                </div>
+                <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center">
+                  <app-circle-img [src]="'/assets/images/IMG_4853.JPG'"></app-circle-img>
+                  <span class="image-caption">Hadi</span>
+                </div>
+                <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center">
+                  <app-circle-img [src]="'/assets/images/IMG_3532.JPG'"></app-circle-img>
+                  <span class="image-caption">Chloé</span>
+                </div>
+              </div>
+            </div>
+            <div class="saegus-lp-sm-spacer"></div>
+            <div class="col-12  saegus-app-container saegus-app-container-row saegus-app-container-align-items-center">
+              <div class="col-3">
+                <h4>Nos clients</h4>
+              </div>
+              <div class="col-9">
+              </div>
+            </div>
+
+          </div>
+        </app-jumbo-tile>
+      </div>
+      
+    </div>
+   </app-layout>
+
+   <app-layout [class]="'primary'">
+    <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center col-12 saegus-lp-body--contrast">
+      <div class="col-2">
+        <div class="saegus-lp-svg" aria-label="il-logo" [inlineSVG]="'/assets/images/IL-BLANC.svg'"></div>
+      </div>
+      <h3>Où nous trouver ?</h3>
+      <small>19, avenue Georges V, 75008 PARIS</small>
+      <div class="saegus-lp-sm-spacer"></div>
+      <app-button [class]="'secondary'">
+        Contactez-nous !
+      </app-button>
+    </div>
+   </app-layout>
+
+</div>

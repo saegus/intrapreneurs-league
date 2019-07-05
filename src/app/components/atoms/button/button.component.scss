@@ -1,0 +1,24 @@
+@import '../../../../scss/colors.scss';
+
+.saegus-lp-button {
+  font-family: 'Gilroy';
+  font-weight: bold;
+  padding: 1em 2em;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8em;
+  
+  &--primary {
+    background-color: $primary-bg-color;
+    color: $third-color;
+  }
+  &--primary {
+    background-color: $secondary-bg-color;
+    color: $primary-color;
+  }
+  &--primary {
+    background-color: $third-bg-color;
+    color: $primary-color;
+  }
+}
