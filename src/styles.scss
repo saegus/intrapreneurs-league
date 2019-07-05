@@ -1,4 +1,5 @@
 @import './scss/colors.scss';
+@import './scss/media.scss';
 
 body {
   padding: 0;
@@ -47,6 +48,7 @@ ol {
 
 .saegus-app-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .saegus-app-container-row {
@@ -84,42 +86,7 @@ ol {
   justify-content: space-between;
 };
 
-.col-12 {
-  width: #{(12 * 100 / 12) + '%'}
-};
-.col-11 {
-  width: #{(11 * 100 / 12) + '%'}
-}
-.col-10 {
-  width: #{(10 * 100 / 12) + '%'}
-}
-.col-9 {
-  width: #{(9 * 100 / 12) + '%'}
-}
-.col-8 {
-  width: #{(8 * 100 / 12) + '%'}
-}
-.col-7 {
-  width: #{(7 * 100 / 12) + '%'}
-}
-.col-6 {
-  width: #{(6 * 100 / 12) + '%'}
-}
-.col-5 {
-  width: #{(5 * 100 / 12) + '%'}
-}
-.col-4 {
-  width: #{(4 * 100 / 12) + '%'}
-}
-.col-3 {
-  width: #{(3 * 100 / 12) + '%'}
-}
-.col-2 {
-  width: #{(2 * 100 / 12) + '%'}
-}
-.col-1 {
-  width: #{(1 * 100 / 12) + '%'}
-}
+
 
 .saegus-app-padding {
   padding: 2em 3em;

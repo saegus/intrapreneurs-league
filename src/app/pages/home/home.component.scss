@@ -7,9 +7,14 @@
   }
 }
 .saegus-lp-testimonials {
+  
   p {
     text-align: center;
   }
+}
+
+.saegus-lp-testimonials app-tile {
+  width: 100%;
 }
 
 :host ::ng-deep .saegus-lp-tile {
@@ -30,6 +35,7 @@
 }
 .saegus-lp-testimonials-container {
   display: flex;
+  width: 100%;
 }
 .saegus-lp-testimonials--quote {
   width: 5em;

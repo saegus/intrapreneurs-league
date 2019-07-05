@@ -13,11 +13,14 @@
         <h2>
           Donnez vie à vos idées innovantes<br/>en moins de 3 mois
         </h2>
-        <span>Notre promesse ? Donner aux intrapreneurs les moyens de concrétiser rapidement leurs idées.</span>
+        <p>Notre promesse ? Donner aux intrapreneurs les moyens de concrétiser rapidement leurs idées.</p>
         <div class="saegus-lp-md-spacer"></div>
-        <app-button [class]="'secondary'">
-          Contactez un coach
-        </app-button>
+        <div class="">
+          <app-button [class]="'secondary'">
+            Contactez un coach
+          </app-button>
+        </div>
+
       </div>
       <div class="saegus-lp-body saegus-lp-body--contrast col-6 saegus-app-padding saegus-lp-no-padding">
         <div class="saegus-lp-svg" aria-label="il-logo" [inlineSVG]="'/assets/images/illustration_1.svg'"></div>
@@ -61,26 +64,30 @@
       <h2 class="saegus-app-text-justify-center col-12">
         Nous l’avons vécu … et nous l’avons résolu
       </h2>
-      <div class="saegus-app-container saegus-app-container-row col-12 saegus-app-text-justify-center saegus-lp-testimonials">
-          <app-tile
-            [class]="['secondary']"
-            *ngFor="let testimonial of testimonials"
-          >
-            <div class="col-12 saegus-app-text-justify-center">
-              <div class="saegus-lp-testimonials-container">
-                <div class="saegus-lp-svg saegus-lp-testimonials--quote" aria-label="il-logo" [inlineSVG]="'/assets/images/quote.svg'"></div>
-                <p>{{ testimonial.value }}</p>
-                <div class="saegus-lp-svg saegus-lp-testimonials--quote" aria-label="il-logo" [inlineSVG]="'/assets/images/quote.svg'"></div>
+      <div
+        class="saegus-app-container saegus-app-container-row col-12 saegus-app-container-justify-center saegus-lp-testimonials">
+          <div 
+            class="col-4 saegus-app-container" 
+            *ngFor="let testimonial of testimonials">
+            <app-tile
+              [class]="['secondary']"
+            >
+              <div class="col-12 saegus-app-text-justify-center">
+                <div class="saegus-lp-testimonials-container">
+                  <div class="saegus-lp-svg saegus-lp-testimonials--quote" aria-label="il-logo" [inlineSVG]="'/assets/images/quote.svg'"></div>
+                  <p>{{ testimonial.value }}</p>
+                  <div class="saegus-lp-svg saegus-lp-testimonials--quote" aria-label="il-logo" [inlineSVG]="'/assets/images/quote.svg'"></div>
+                </div>
               </div>
-            </div>
-          </app-tile>
+            </app-tile>
+          </div>
       </div>
     </div>
   </app-layout>
 
   <app-layout [class]="'secondary'">
     <div class="saegus-app-container saegus-app-container-column">
-      <h2 class="saegus-app-text-justify-center col-12">
+      <h2 class="saegus-app-text-justify-center col-12 saegus-lp-title-spacing">
         Testez notre démarche !<br />
         Une heure de coaching gratuite avec un membre de notre équipe
       </h2>
@@ -105,6 +112,12 @@
       <div class="saegus-lp-md-spacer"></div>
 
       <app-timeline [elements]="timeline"></app-timeline>
+      <div class="saegus-lp-md-spacer"></div>
+      <div class="saegus-app-container col-12 saegus-app-container-justify-center">
+        <app-button [class]="'primary'">
+           Prendre rendez-vous 🚀
+        </app-button>
+      </div>
     </div>
   </app-layout>
 
@@ -150,7 +163,10 @@
               <div class="col-3">
                 <h4>Nos clients</h4>
               </div>
-              <div class="col-9">
+              <div class="col-9 saegus-app-container saegus-app-container-row saegus-app-container-justify-space-around saegus-app-container-align-items-center saegus-lp-row-to-column-mobile">
+                <img src="/assets/images/loreal.png"/>
+                <img src="/assets/images/orange.png"/>
+                <img src="/assets/images/thales.png"/>
               </div>
             </div>
 

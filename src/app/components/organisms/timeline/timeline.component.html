@@ -6,8 +6,7 @@
       'saegus-lp-timeline-left': true,
       'saegus-app-container-column': true,
       'saegus-app-container-align-items-center': true,
-      'saegus-app-container': true,
-      'saegus-lp-timeline-border-right': p.right.length <= p.left.length
+      'saegus-app-container': true
     }">
     <div class="col-6">
       <app-tile [class]="[point.displayAs, 'timeline-left']" *ngFor="let point of p.left; let j = index">
@@ -29,8 +28,7 @@
     'saegus-lp-timeline-right': true,
     'saegus-app-container-column': true,
     'saegus-app-container-align-items-center': true,
-    'saegus-app-container': true,
-    'saegus-lp-timeline-border-left': p.left.length <= p.right.length
+    'saegus-app-container': true
     }">
     <div class="col-6">
       <app-tile 

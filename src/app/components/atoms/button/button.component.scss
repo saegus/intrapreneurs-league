@@ -11,13 +11,13 @@
   
   &--primary {
     background-color: $primary-bg-color;
-    color: $third-color;
+    color: $secondary-color;
   }
-  &--primary {
+  &--secondary {
     background-color: $secondary-bg-color;
     color: $primary-color;
   }
-  &--primary {
+  &--third {
     background-color: $third-bg-color;
     color: $primary-color;
   }
