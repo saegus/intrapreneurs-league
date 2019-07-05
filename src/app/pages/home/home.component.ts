@@ -46,7 +46,7 @@ export class HomeComponent implements OnInit {
         },
         {
           displayAs: 'secondary',
-          logo: '/assets/images/Foreseeds_Logo.png'
+          logo: this.environnement.production ? 'assets/images/Foreseeds_Logo.png' : '/assets/images/Foreseeds_Logo.png'
         }
       ],
       right: [{
