@@ -2,7 +2,10 @@
   <app-layout [class]="'primary'">
     <div class="saegus-lp-header-logo saegus-app-container saegus-app-container-row col-12 saegus-app-justify-start">
       <div class="saegus-lp-header-logo--container">
-        <div class="saegus-lp-svg" aria-label="il-logo" [inlineSVG]="'/assets/images/IL-BLANC.svg'"></div>
+        <div class="saegus-lp-svg" 
+          aria-label="il-logo" 
+          [inlineSVG]="environnement.production ? '/assets/images/IL-BLANC.svg' : '/../assets/images/IL-BLANC.svg'">
+        </div>
         <div class="saegus-lp-sm-spacer"></div>
         <i class="saegus-lp-body--contrast">Lorem ipsum pour baseline</i>
       </div>
@@ -23,7 +26,9 @@
 
       </div>
       <div class="saegus-lp-body saegus-lp-body--contrast col-6 saegus-app-padding saegus-lp-no-padding">
-        <div class="saegus-lp-svg" aria-label="il-logo" [inlineSVG]="'/assets/images/illustration_1.svg'"></div>
+        <div class="saegus-lp-svg" 
+          aria-label="il-logo" 
+          [inlineSVG]="environnement.production ? '/assets/images/illustration_1.svg' : '/../assets/images/illustration_1.svg'"></div>
       </div>
     </div>
   </app-layout>
@@ -74,9 +79,15 @@
             >
               <div class="col-12 saegus-app-text-justify-center">
                 <div class="saegus-lp-testimonials-container">
-                  <div class="saegus-lp-svg saegus-lp-testimonials--quote" aria-label="il-logo" [inlineSVG]="'/assets/images/quote.svg'"></div>
+                  <div class="saegus-lp-svg saegus-lp-testimonials--quote" 
+                    aria-label="il-logo" 
+                    [inlineSVG]="environnement.production ? '/assets/images/quote.svg' : '/../assets/images/quote.svg'">
+                  </div>
                   <p>{{ testimonial.value }}</p>
-                  <div class="saegus-lp-svg saegus-lp-testimonials--quote" aria-label="il-logo" [inlineSVG]="'/assets/images/quote.svg'"></div>
+                  <div class="saegus-lp-svg saegus-lp-testimonials--quote" 
+                    aria-label="il-logo" 
+                    [inlineSVG]="environnement.production ? '/assets/images/quote.svg' : '/../assets/images/quote.svg'">
+                  </div>
                 </div>
               </div>
             </app-tile>
@@ -91,6 +102,7 @@
         Testez notre démarche !<br />
         Une heure de coaching gratuite avec un membre de notre équipe
       </h2>
+      <div class="saegus-lp-md-spacer"></div>
       <div
         class="saegus-app-container saegus-app-container-row col-12 saegus-app-text-justify-center">
         <app-tile-image class="['secondary']" src="'/assets/images/IMG_4892.JPG'">
@@ -104,7 +116,7 @@
         </app-tile-image>
       </div>
 
-      <div class="saegus-lp-lg-spacer"></div>
+      <div class="saegus-lp-sm-spacer"></div>
 
       <h2 class="saegus-app-text-justify-center col-12">
         Une démarche créée sur-mesure pour accélérer <br/> votre projet intrapreneurial
@@ -143,7 +155,7 @@
                 <h4>Notre team</h4>
               </div>
               <div
-                class="col-9 saegus-app-container saegus-app-container-row saegus-app-container-justify-space-around saegus-lp-who-are-we">
+                class="col-9 saegus-app-container saegus-app-container-row saegus-app-container-justify-space-around saegus-lp-who-are-we saegus-lp-row-to-column-mobile">
                 <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center">
                   <app-circle-img [src]="'/assets/images/IMG_4892.JPG'"></app-circle-img>
                   <span class="image-caption">Pierre</span>
@@ -180,7 +192,10 @@
    <app-layout [class]="'primary'">
     <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center col-12 saegus-lp-body--contrast">
       <div class="col-2">
-        <div class="saegus-lp-svg" aria-label="il-logo" [inlineSVG]="'/assets/images/IL-BLANC.svg'"></div>
+        <div class="saegus-lp-svg" 
+          aria-label="il-logo" 
+          [inlineSVG]="environnement.production ? '/assets/images/IL-BLANC.svg' : '/../assets/images/IL-BLANC.svg'">
+        </div>
       </div>
       <h3>Où nous trouver ?</h3>
       <small>19, avenue Georges V, 75008 PARIS</small>
@@ -191,4 +206,10 @@
     </div>
    </app-layout>
 
+   <!-- <form id=“foss-5d1f114cf42087542b380a58”>
+     test
+   </form> -->
+   <!-- <script async
+     src="https://app.plezi.co/scripts/ossleads_forms.js?tenant_id=5c9e377c54067a58ead4ece3&form_id=5d1f0e82f4208745191cd02d&form_version=3&content_web_form_id=5d1f114cf42087542b380a58">
+    </script> -->
 </div>

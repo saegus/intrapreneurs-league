@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
+import { environment } from '../../../environments/environment';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,6 +11,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 export class HomeComponent implements OnInit {
   public svg: SafeHtml;
 
+  public environnement = environment;
   public timeline = [{
     id: 0,
     left:[{

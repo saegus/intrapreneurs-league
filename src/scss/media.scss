@@ -2,8 +2,8 @@
 
 // Mobile (≥400)
 
-@media (max-width: 549px) {
-    .col-12 {
+@media (max-width: 749px) {
+  .col-12 {
     width: #{(12 * 100 / 12) + '%'}
   };
   .col-11 {
@@ -113,26 +113,25 @@
 
 }
 
-// Phablet (≥550px) 
-@media (min-width: 550px) and (max-width: 749px) {
-
-  .col-12 {
+@media only screen and (min-device-width : 768px) and (max-device-width : 870px) and (orientation : portrait) {
+  /* Styles pour cette Media Queries */
+    .col-12 {
     width: #{(12 * 100 / 12) + '%'}
   };
   .col-11 {
-    width: #{(11 * 100 / 12) + '%'}
+    width: #{(12 * 100 / 12) + '%'}
   };
   .col-10 {
-    width: #{(10 * 100 / 12) + '%'}
+    width: #{(12 * 100 / 12) + '%'}
   };
   .col-9 {
-    width: #{(9 * 100 / 12) + '%'}
+    width: #{(12 * 100 / 12) + '%'}
   };
   .col-8 {
-    width: #{(8 * 100 / 12) + '%'}
+    width: #{(12 * 100 / 12) + '%'}
   };
   .col-7 {
-    width: #{(7 * 100 / 12) + '%'}
+    width: #{(12 * 100 / 12) + '%'}
   };
   .col-6 {
     width: #{(12 * 100 / 12) + '%'}
@@ -152,6 +151,7 @@
   .col-1 {
     width: #{(12 * 100 / 12) + '%'}
   };
+  
   .saegus-app-justify-start {
     justify-content: center !important;
   }
@@ -162,10 +162,26 @@
   .saegus-timeline::after {
     left: 0 !important;
   }
-
+  .saegus-lp-title-spacing {
+    margin-bottom: 4em;
+  }
   .saegus-lp-timeline-right,
   .saegus-lp-timeline-left {
     margin-left: 3em;
+  }
+  .saegus-lp-tile {
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+  }
+
+  .saegus-lp-tile-image .saegus-lp-tile {
+    margin-left: 1em !important;
+  }
+  .saegus-lp-tile-image .saegus-lp-circle-img {
+    top: -5.3em !important;
+    left: calc(50% - 4em) !important;
+    width: 8em !important;
+    height: 8em !important;
   }
 
   .saegus-lp-tile--timeline-right::after {
@@ -203,25 +219,25 @@
   }
 }
 
-// Tablette (≥750px)
-@media (min-width: 750px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+  /* Styles pour cette Media Queries */
   .col-12 {
     width: #{(12 * 100 / 12) + '%'}
   };
   .col-11 {
-    width: #{(11 * 100 / 12) + '%'}
+    width: #{(12 * 100 / 12) + '%'}
   };
   .col-10 {
-    width: #{(10 * 100 / 12) + '%'}
+    width: #{(12 * 100 / 12) + '%'}
   };
   .col-9 {
-    width: #{(9 * 100 / 12) + '%'}
+    width: #{(12 * 100 / 12) + '%'}
   };
   .col-8 {
-    width: #{(8 * 100 / 12) + '%'}
+    width: #{(12 * 100 / 12) + '%'}
   };
   .col-7 {
-    width: #{(7 * 100 / 12) + '%'}
+    width: #{(12 * 100 / 12) + '%'}
   };
   .col-6 {
     width: #{(12 * 100 / 12) + '%'}
@@ -241,17 +257,58 @@
   .col-1 {
     width: #{(12 * 100 / 12) + '%'}
   };
+  
+  .saegus-app-justify-start {
+    justify-content: center !important;
+  }
+  .saegus-lp-layout {
+    padding: 3em !important;
+  }
+  
+  .saegus-lp-title-spacing {
+    margin-bottom: 4em;
+  }
+  
+  .saegus-lp-tile {
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+  }
 
+  .saegus-lp-tile-image .saegus-lp-tile {
+    margin-left: 1em !important;
+  }
+  .saegus-lp-tile-image .saegus-lp-circle-img {
+    top: -5.3em !important;
+    left: calc(50% - 4em) !important;
+    width: 8em !important;
+    height: 8em !important;
+  }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    text-align: center;
+  }
   .saegus-app-justify-start {
     justify-content: center !important;
   }
 
-
+  .saegus-app-padding {
+    padding: 2em !important;
+  }
 }
 
+// Tablette (≥750px)
+// @media (min-width: 750px) {
+  
+// }
+
 // Desktop (≥1000px)
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
   .col-12 {
     width: #{(12 * 100 / 12) + '%'}
   };
