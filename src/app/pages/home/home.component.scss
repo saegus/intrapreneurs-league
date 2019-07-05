@@ -2,8 +2,17 @@
 
 .saegus-lp-header-logo {
   padding: 0 3em;
-  svg {
-    height: 8em;
+  &--container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    small {
+      margin-top: 1em;
+    }
+  }
+  .logo-header {
+    width: 8em;
   }
 }
 .saegus-lp-testimonials {

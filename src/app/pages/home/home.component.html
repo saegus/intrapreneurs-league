@@ -2,12 +2,14 @@
   <app-layout [class]="'primary'">
     <div class="saegus-lp-header-logo saegus-app-container saegus-app-container-row col-12 saegus-app-justify-start">
       <div class="saegus-lp-header-logo--container">
-        <div class="saegus-lp-svg" 
+        <div class="logo-header" 
           aria-label="il-logo" 
           [inlineSVG]="environnement.production ? '/assets/images/IL-BLANC.svg' : '/../assets/images/IL-BLANC.svg'">
         </div>
-        <div class="saegus-lp-sm-spacer"></div>
-        <i class="saegus-lp-body--contrast">Lorem ipsum pour baseline</i>
+        <!-- <div class="saegus-lp-sm-spacer"></div> -->
+        <small>
+          <i class="saegus-lp-body--contrast">Lorem ipsum pour baseline</i>
+        </small>
       </div>
     </div>
     <div class="saegus-lp-lg-spacer"></div>
@@ -133,61 +135,64 @@
     </div>
   </app-layout>
 
-   <app-layout [class]="'third'">
-    <div class="saegus-app-container saegus-app-container-column col-12 saegus-app-container-align-items-center">
-      <div class="col-10">
-        <app-jumbo-tile>
-          <div class="saegus-app-container saegus-app-container-column">
-            <h2 class="saegus-app-text-justify-center col-12">Qui sommes nous ?<br /> 👀</h2>
-            <div class="col-12 saegus-app-container saegus-app-container-row saegus-app-container-align-items-center">
-              <div class="col-3">
-                <h4>Notre passion</h4>
-              </div>
-              <div class="col-9">
-                <p> Nous sommes des coachs, des intrapreneurs, des experts de l’Agile, du Design Thinking ou encore du
-                  Lean Start-up, capables de choisir pour chaque contexte la meilleure méthodologie et les bons outils.
-                </p>
-              </div>
-            </div>
-            <div class="saegus-lp-sm-spacer"></div>
-            <div class="col-12 saegus-app-container saegus-app-container-row saegus-app-container-align-items-center">
-              <div class="col-3">
-                <h4>Notre team</h4>
-              </div>
-              <div
-                class="col-9 saegus-app-container saegus-app-container-row saegus-app-container-justify-space-around saegus-lp-who-are-we saegus-lp-row-to-column-mobile">
-                <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center">
-                  <app-circle-img [src]="'/assets/images/IMG_4892.JPG'"></app-circle-img>
-                  <span class="image-caption">Pierre</span>
-                </div>
-                <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center">
-                  <app-circle-img [src]="'/assets/images/IMG_4853.JPG'"></app-circle-img>
-                  <span class="image-caption">Hadi</span>
-                </div>
-                <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center">
-                  <app-circle-img [src]="'/assets/images/IMG_3532.JPG'"></app-circle-img>
-                  <span class="image-caption">Chloé</span>
-                </div>
-              </div>
-            </div>
-            <div class="saegus-lp-sm-spacer"></div>
-            <div class="col-12  saegus-app-container saegus-app-container-row saegus-app-container-align-items-center">
-              <div class="col-3">
-                <h4>Nos clients</h4>
-              </div>
-              <div class="col-9 saegus-app-container saegus-app-container-row saegus-app-container-justify-space-around saegus-app-container-align-items-center saegus-lp-row-to-column-mobile">
-                <img src="/assets/images/loreal.png"/>
-                <img src="/assets/images/orange.png"/>
-                <img src="/assets/images/thales.png"/>
-              </div>
-            </div>
+  <div class="saegus-lp-special-layout">
 
-          </div>
-        </app-jumbo-tile>
-      </div>
-      
-    </div>
-   </app-layout>
+    <app-layout [class]="'third'">
+     <div class="saegus-app-container saegus-app-container-column col-12 saegus-app-container-align-items-center saegus-lp-special-layout">
+       <div class="col-10">
+         <app-jumbo-tile>
+           <div class="saegus-app-container saegus-app-container-column">
+             <h2 class="saegus-app-text-justify-center col-12">Qui sommes nous ?<br /> 👀</h2>
+             <div class="col-12 saegus-app-container saegus-app-container-row saegus-app-container-align-items-center">
+               <div class="col-3">
+                 <h4>Notre passion</h4>
+               </div>
+               <div class="col-9">
+                 <p> Nous sommes des coachs, des intrapreneurs, des experts de l’Agile, du Design Thinking ou encore du
+                   Lean Start-up, capables de choisir pour chaque contexte la meilleure méthodologie et les bons outils.
+                 </p>
+               </div>
+             </div>
+             <div class="saegus-lp-sm-spacer"></div>
+             <div class="col-12 saegus-app-container saegus-app-container-row saegus-app-container-align-items-center">
+               <div class="col-3">
+                 <h4>Notre team</h4>
+               </div>
+               <div
+                 class="col-9 saegus-app-container saegus-app-container-row saegus-app-container-justify-space-around saegus-lp-who-are-we saegus-lp-row-to-column-mobile">
+                 <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center">
+                   <app-circle-img [src]="'/assets/images/IMG_4892.JPG'"></app-circle-img>
+                   <span class="image-caption">Pierre</span>
+                 </div>
+                 <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center">
+                   <app-circle-img [src]="'/assets/images/IMG_4853.JPG'"></app-circle-img>
+                   <span class="image-caption">Hadi</span>
+                 </div>
+                 <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center">
+                   <app-circle-img [src]="'/assets/images/IMG_3532.JPG'"></app-circle-img>
+                   <span class="image-caption">Chloé</span>
+                 </div>
+               </div>
+             </div>
+             <div class="saegus-lp-sm-spacer"></div>
+             <div class="col-12  saegus-app-container saegus-app-container-row saegus-app-container-align-items-center">
+               <div class="col-3">
+                 <h4>Nos clients</h4>
+               </div>
+               <div class="col-9 saegus-app-container saegus-app-container-row saegus-app-container-justify-space-around saegus-app-container-align-items-center saegus-lp-row-to-column-mobile">
+                 <img class="client-image" src="/assets/images/loreal.png"/>
+                 <img class="client-image" src="/assets/images/orange.png"/>
+                 <img class="client-image" src="/assets/images/thales.png"/>
+               </div>
+             </div>
+ 
+           </div>
+         </app-jumbo-tile>
+       </div>
+       
+     </div>
+    </app-layout>
+  </div>
 
    <app-layout [class]="'primary'">
     <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center col-12 saegus-lp-body--contrast">
