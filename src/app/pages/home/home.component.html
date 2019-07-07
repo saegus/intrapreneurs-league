@@ -6,23 +6,23 @@
           aria-label="il-logo" 
           [inlineSVG]="environnement.production ? '/assets/images/IL-BLANC.svg' : '/../assets/images/IL-BLANC.svg'">
         </div>
-        <!-- <div class="saegus-lp-sm-spacer"></div> -->
         <small>
-          <i class="saegus-lp-body--contrast">Lorem ipsum pour baseline</i>
+          <i 
+            class="saegus-lp-body--contrast"
+            [innerHTML]="'header.logo.baseline' | translate"
+          ></i>
         </small>
       </div>
     </div>
     <div class="saegus-lp-lg-spacer"></div>
     <div class="saegus-app-container saegus-app-container-row col-12">
       <div class="saegus-lp-body saegus-lp-body--contrast col-6 saegus-app-padding">
-        <h2>
-          Donnez vie à vos idées innovantes<br/>en moins de 3 mois
-        </h2>
-        <p>Notre promesse ? Donner aux intrapreneurs les moyens de concrétiser rapidement leurs idées.</p>
+        <h2 [innerHTML]="'header.left.title' | translate"></h2>
+        <p [innerHTML]="'header.left.paragraph' | translate"></p>
         <div class="saegus-lp-md-spacer"></div>
         <div class="">
-          <app-button [class]="'secondary'">
-            Contactez un coach
+          <app-button [class]="'secondary'" (click)="scroll(contactForm)">
+            <span [innerHTML]="'header.left.cta' | translate"></span>
           </app-button>
         </div>
 
@@ -37,40 +37,22 @@
   <app-layout [class]="'secondary'">
     <div class="saegus-app-container saegus-app-container-row">
       <div class="saegus-lp-body col-6 saegus-app-padding">
-        <h2>
-          Tout le monde peut devenir <br /> un intrapreneur.
-        </h2>
+        <h2 [innerHTML]="'layer#1.left.title' | translate"></h2>
         <span>
-          <p>
-            C’est au travers de nos propres expériences intrapreneuriales que nous nous sommes forgés cette conviction :
-            qui
-            mieux que les personnes qui vivent et côtoient les problèmes pour les résoudre ?
-          </p>
-          <p>
-            Bien que porteurs de vision, les intrapreneurs ont besoin d’aide dans leur exécution, aussi bien en termes de
-            méthodologie que d’outillage : c’est pour cela que nous avons créé l’Intrapreneurs League.
-          </p>
+          <p [innerHTML]="'layer#1.left.paragraph' | translate "></p>
         </span>
       </div>
       <div class="saegus-lp-body col-6 saegus-app-padding">
-        <h2>
-          L’Intrapreneurs League,<br />c’est quoi ?
-        </h2>
+        <h2 [innerHTML]="'layer#1.right.title' | translate"></h2>
         <span>
-          <p>
-            C’est une équipe de coachs, qui a développé une méthode – l’Intracubation© - destinée à cadencer, accélérer
-            et outiller toutes les phases de conception de nouveaux produits & services par vos intrapreneurs : de
-            l’idéation au passage à l’échelle, en passant par la priorisation et le co-financement des initiatives.
-          </p>
+          <p [innerHTML]="'layer#1.right.paragraph' | translate "></p>
         </span>
       </div>
     </div>
   </app-layout>
   <app-layout [class]="'third'">
     <div class="saegus-app-container saegus-app-container-column">
-      <h2 class="saegus-app-text-justify-center col-12">
-        Nous l’avons vécu … et nous l’avons résolu
-      </h2>
+      <h2 class="saegus-app-text-justify-center col-12" [innerHTML]="'layer#2.title' | translate"></h2>
       <div
         class="saegus-app-container saegus-app-container-row col-12 saegus-app-container-justify-center saegus-lp-testimonials">
           <div 
@@ -85,7 +67,7 @@
                     aria-label="il-logo" 
                     [inlineSVG]="environnement.production ? '/assets/images/quote.svg' : '/../assets/images/quote.svg'">
                   </div>
-                  <p>{{ testimonial.value }}</p>
+                  <p [innerHTML]="testimonial.value | translate"></p>
                   <div class="saegus-lp-svg saegus-lp-testimonials--quote" 
                     aria-label="il-logo" 
                     [inlineSVG]="environnement.production ? '/assets/images/quote.svg' : '/../assets/images/quote.svg'">
@@ -100,38 +82,59 @@
 
   <app-layout [class]="'secondary'">
     <div class="saegus-app-container saegus-app-container-column">
-      <h2 class="saegus-app-text-justify-center col-12 saegus-lp-title-spacing">
-        Testez notre démarche !<br />
-        Une heure de coaching gratuite avec un membre de notre équipe
-      </h2>
+      <h2 class="saegus-app-text-justify-center col-12 saegus-lp-title-spacing" [innerHTML]="'layer#3.title' | translate "></h2>
       <div class="saegus-lp-md-spacer"></div>
       <div
         class="saegus-app-container saegus-app-container-row col-12 saegus-app-text-justify-center">
         <app-tile-image class="['secondary']"
           [src]="environnement.production ? 'assets/images/IMG_4892.JPG' : '/assets/images/IMG_4892.JPG'">
-          <p>
-            Préparer un pitch, comprendre sa cible et son marché, dynamiser l’idéation, concrétiser le résultat d’un
-            hackathon… Echangez avec Pierre, l’un de nos coachs Intracubation© !
-            <br /><br />
-            Une heure de coaching pour repartir avec quelques tips qui vont aideront à accélérer vos projets.
-            L’occasion de nous rencontrer et de découvrir notre démarche Intrapreneurs League.
-          </p>
+          <p [innerHTML]="'layer#3.paragraph' | translate "></p>
+          <app-button [class]="'primary'" (click)="scroll(contactForm)">
+            <span [innerHTML]="'layer#3.cta' | translate"></span>
+          </app-button>
         </app-tile-image>
       </div>
 
       <div class="saegus-lp-sm-spacer"></div>
 
-      <h2 class="saegus-app-text-justify-center col-12">
-        Une démarche créée sur-mesure pour accélérer <br/> votre projet intrapreneurial
-      </h2>
+      <h2 class="saegus-app-text-justify-center col-12" [innerHTML]="'layer#4.title' | translate"></h2>
       <div class="saegus-lp-md-spacer"></div>
-
       <app-timeline [elements]="timeline"></app-timeline>
       <div class="saegus-lp-md-spacer"></div>
       <div class="saegus-app-container col-12 saegus-app-container-justify-center">
-        <app-button [class]="'primary'">
-           Prendre rendez-vous 🚀
+        <app-button [class]="'primary'" (click)="scroll(contactForm)">
+           <span [innerHTML]="'layer#4.cta' | translate"></span>
         </app-button>
+      </div>
+    </div>
+  </app-layout>
+
+  <app-layout [class]="'third'">
+    <div
+      class="saegus-app-container saegus-app-container-column col-12 saegus-app-container-align-items-center saegus-lp-special-layout">
+      <h2 class="saegus-app-text-justify-center col-12" [innerHTML]="'layer#5.title' | translate"></h2>
+      <div class="saegus-app-container saegus-app-container-row">
+        <div class="saegus-lp-body col-6 saegus-app-padding saegus-app-container saegus-app-container-column saegus-app-container-align-items-center">
+          <img
+            class="saegus-lp-special-height_1"
+            [src]="environnement.production ? 'assets/images/Foreseeds_Logo.png' : '/assets/images/Foreseeds_Logo.png'" />
+          <span>
+            <p class="saegus-app-text-justify-center" [innerHTML]="'layer#5.left.paragraph' | translate "></p>
+          </span>
+          <app-button [class]="'primary'" (click)="scroll(contactForm)">
+            <span [innerHTML]="'layer#5.left.cta' | translate"></span>
+          </app-button>
+        </div>
+        <div
+          class="saegus-lp-body col-6 saegus-app-padding saegus-app-container saegus-app-container-column saegus-app-container-align-items-center">
+          <img
+            class="saegus-lp-special-height_2"
+            [src]="environnement.production ? 'assets/images/cross.png' : '/assets/images/cross.png'" />
+          <div class="saegus-lp-sm-spacer"></div>
+          <span>
+            <p class="saegus-app-text-justify-center" [innerHTML]="'layer#5.right.paragraph' | translate "></p>
+          </span>
+        </div>
       </div>
     </div>
   </app-layout>
@@ -143,21 +146,19 @@
        <div class="col-10">
          <app-jumbo-tile>
            <div class="saegus-app-container saegus-app-container-column">
-             <h2 class="saegus-app-text-justify-center col-12">Qui sommes nous ?<br /> 👀</h2>
+             <h2 class="saegus-app-text-justify-center col-12" [innerHTML]="'layer#6.title' | translate"></h2>
              <div class="col-12 saegus-app-container saegus-app-container-row saegus-app-container-align-items-center">
                <div class="col-3">
-                 <h4>Notre passion</h4>
+                 <h4 [innerHTML]="'layer#6.row#1.title' | translate"></h4>
                </div>
                <div class="col-9">
-                 <p> Nous sommes des coachs, des intrapreneurs, des experts de l’Agile, du Design Thinking ou encore du
-                   Lean Start-up, capables de choisir pour chaque contexte la meilleure méthodologie et les bons outils.
-                 </p>
+                 <p [innerHTML]="'layer#6.row#1.paragraph' | translate"></p>
                </div>
              </div>
              <div class="saegus-lp-sm-spacer"></div>
              <div class="col-12 saegus-app-container saegus-app-container-row saegus-app-container-align-items-center">
                <div class="col-3">
-                 <h4>Notre team</h4>
+                 <h4 [innerHTML]="'layer#6.row#2.title' | translate"></h4>
                </div>
                <div
                  class="col-9 saegus-app-container saegus-app-container-row saegus-app-container-justify-space-around saegus-lp-who-are-we saegus-lp-row-to-column-mobile">
@@ -178,7 +179,7 @@
              <div class="saegus-lp-sm-spacer"></div>
              <div class="col-12  saegus-app-container saegus-app-container-row saegus-app-container-align-items-center">
                <div class="col-3">
-                 <h4>Nos clients</h4>
+                 <h4 [innerHTML]="'layer#6.row#3.title' | translate"></h4>
                </div>
                <div class="col-9 saegus-app-container saegus-app-container-row saegus-app-container-justify-space-around saegus-app-container-align-items-center saegus-lp-row-to-column-mobile">
                  <img class="client-image" [src]="environnement.production ? 'assets/images/loreal.png' : '/assets/images/loreal.png'"/>
@@ -195,6 +196,13 @@
     </app-layout>
   </div>
 
+  <app-layout [class]="'secondary'" >
+    <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center col-12"
+      #contactForm>
+        <form class="Form" id="foss-5d1f114cf42087542b380a58"></form>
+    </div>
+  </app-layout>
+
    <app-layout [class]="'primary'">
     <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center col-12 saegus-lp-body--contrast">
       <div class="col-2">
@@ -203,19 +211,10 @@
           [inlineSVG]="environnement.production ? '/assets/images/IL-BLANC.svg' : '/../assets/images/IL-BLANC.svg'">
         </div>
       </div>
-      <h3>Où nous trouver ?</h3>
-      <small>19, avenue Georges V, 75008 PARIS</small>
+      <h3 [innerHTML]="'layer#7.title' | translate"></h3>
+      <small [innerHTML]="'layer#7.paragraph' | translate"></small>
       <div class="saegus-lp-sm-spacer"></div>
-      <app-button [class]="'secondary'">
-        Contactez-nous !
-      </app-button>
+      <span [innerHTML]="'layer#7.cta' | translate"></span>
     </div>
    </app-layout>
-
-   <!-- <form id=“foss-5d1f114cf42087542b380a58”>
-     test
-   </form> -->
-   <!-- <script async
-     src="https://app.plezi.co/scripts/ossleads_forms.js?tenant_id=5c9e377c54067a58ead4ece3&form_id=5d1f0e82f4208745191cd02d&form_version=3&content_web_form_id=5d1f114cf42087542b380a58">
-    </script> -->
 </div>

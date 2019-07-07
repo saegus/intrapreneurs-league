@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'saegus-intracubation';
+  constructor(private translate: TranslateService) {
+    const navigatorLangugage = navigator.language;
+    const availableLanguages = ['fr'];
+
+    translate.setDefaultLang(availableLanguages.find(x => x == navigatorLangugage || x == 'fr'));
+  }
 }

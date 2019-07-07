@@ -209,6 +209,18 @@
   .saegus-lp-header-logo {
     justify-content: center !important;
   }
+  app-tile-image {
+    app-button {
+      position: absolute;
+      bottom: -1.5em;
+      left: 1em;
+      width: calc(100% - 2em);
+
+      button {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -283,6 +295,23 @@
   .saegus-lp-header-logo {
     justify-content: center !important;
   }
+  app-button {
+    width: 100%;
+    button {
+      width: 100%;
+    }
+  }
+  app-tile-image {
+    app-button {
+      position: absolute;
+      bottom: -1.5em;
+      left: 3em;
+      width: calc(100% - 2em);
+      button {
+        width: 80%;
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -349,6 +378,13 @@
   .saegus-lp-layout {
     padding: 3em 3em !important;
   }
+  app-tile-image {
+    app-button {
+      position: absolute;
+      bottom: -1.5em;
+      left: calc(50% - 4em);
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -412,392 +448,12 @@
     top: 50% !important;
     right: calc(-50% - .5em) !important;
   }
+
+  app-tile-image {
+    app-button {
+      position: absolute;
+      bottom: -1.5em;
+      left: calc(50% - 4em);
+    }
+  }
 }
-
-
-
-
-// @media (max-width: 749px) {
-//   .col-12 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-11 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-10 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-9 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-8 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-7 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-6 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-5 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-4 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-3 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-2 {
-//     width: #{(3 * 100 / 12) + '%'}
-//   };
-//   .col-1 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .saegus-lp-row-to-column-mobile {
-//     flex-direction: column !important;
-//     img {
-//       margin: 1em 0;
-//     }
-//   }
-//   .saegus-app-justify-start {
-//     justify-content: center !important;
-//   }
-//   .saegus-lp-layout {
-//     padding: 1em !important;
-//   }
-  
-//   .saegus-timeline::after {
-//     left: 0 !important;
-//   }
-//   .saegus-lp-title-spacing {
-//     margin-bottom: 4em;
-//   }
-//   .saegus-lp-timeline-right,
-//   .saegus-lp-timeline-left {
-//     margin-left: 3em;
-//   }
-//   .saegus-lp-tile {
-//     padding-left: 2em !important;
-//     padding-right: 2em !important;
-//   }
-
-//   .saegus-lp-tile-image .saegus-lp-tile {
-//     margin-left: 1em !important;
-//   }
-//   .saegus-lp-tile-image .saegus-lp-circle-img {
-//     top: -5.3em !important;
-//     left: calc(50% - 4em) !important;
-//     width: 8em !important;
-//     height: 8em !important;
-//   }
-
-//   .saegus-lp-tile--timeline-right::after {
-//     left: -3em !important;
-//     top: 50% !important;
-//   }
-//   .saegus-lp-tile--timeline-left::after {
-//     left: -3em !important;
-//     top: 50% !important;
-//   }
-//   .saegus-lp-tile--timeline-right::before {
-//     left: -3.5em !important;
-//     top: calc(50% - 0.4em) !important;
-//   }
-//   .saegus-lp-tile--timeline-left::before {
-//     left: -3.5em !important;
-//     top: calc(50% - 0.4em) !important;
-//   }
-
-//   h1,
-//   h2,
-//   h3,
-//   h4,
-//   h5,
-//   h6,
-//   p {
-//     text-align: center;
-//   }
-//   .saegus-app-justify-start {
-//     justify-content: center !important;
-//   }
-
-//   .saegus-app-padding {
-//     padding: 2em !important;
-//   }
-
-// }
-
-// @media only screen and (min-device-width : 768px) and (max-device-width : 870px) and (orientation : portrait) {
-//   /* Styles pour cette Media Queries */
-//     .col-12 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-11 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-10 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-9 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-8 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-7 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-6 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-5 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-4 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-3 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-2 {
-//     width: #{(3 * 100 / 12) + '%'}
-//   };
-//   .col-1 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-  
-//   .saegus-app-justify-start {
-//     justify-content: center !important;
-//   }
-//   .saegus-lp-layout {
-//     padding: 1em !important;
-//   }
-  
-//   .saegus-timeline::after {
-//     left: 0 !important;
-//   }
-//   .saegus-lp-title-spacing {
-//     margin-bottom: 4em;
-//   }
-//   .saegus-lp-timeline-right,
-//   .saegus-lp-timeline-left {
-//     margin-left: 3em;
-//   }
-//   .saegus-lp-tile {
-//     padding-left: 2em !important;
-//     padding-right: 2em !important;
-//   }
-
-//   .saegus-lp-tile-image .saegus-lp-tile {
-//     margin-left: 1em !important;
-//   }
-//   .saegus-lp-tile-image .saegus-lp-circle-img {
-//     top: -5.3em !important;
-//     left: calc(50% - 4em) !important;
-//     width: 8em !important;
-//     height: 8em !important;
-//   }
-
-//   .saegus-lp-tile--timeline-right::after {
-//     left: -3em !important;
-//     top: 50% !important;
-//   }
-//   .saegus-lp-tile--timeline-left::after {
-//     left: -3em !important;
-//     top: 50% !important;
-//   }
-//   .saegus-lp-tile--timeline-right::before {
-//     left: -3.5em !important;
-//     top: calc(50% - 0.4em) !important;
-//   }
-//   .saegus-lp-tile--timeline-left::before {
-//     left: -3.5em !important;
-//     top: calc(50% - 0.4em) !important;
-//   }
-
-//   h1,
-//   h2,
-//   h3,
-//   h4,
-//   h5,
-//   h6,
-//   p {
-//     text-align: center;
-//   }
-//   .saegus-app-justify-start {
-//     justify-content: center !important;
-//   }
-
-//   .saegus-app-padding {
-//     padding: 2em !important;
-//   }
-// }
-
-// @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
-//   /* Styles pour cette Media Queries */
-//   .col-12 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-11 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-10 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-9 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-8 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-7 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-6 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-5 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-4 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-3 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-2 {
-//     width: #{(3 * 100 / 12) + '%'}
-//   };
-//   .col-1 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-  
-//   .saegus-app-justify-start {
-//     justify-content: center !important;
-//   }
-//   .saegus-lp-layout {
-//     padding: 3em !important;
-//   }
-  
-//   .saegus-lp-title-spacing {
-//     margin-bottom: 4em;
-//   }
-  
-//   .saegus-lp-tile {
-//     padding-left: 2em !important;
-//     padding-right: 2em !important;
-//   }
-
-//   .saegus-lp-tile-image .saegus-lp-tile {
-//     margin-left: 1em !important;
-//   }
-//   .saegus-lp-tile-image .saegus-lp-circle-img {
-//     top: -5.3em !important;
-//     left: calc(50% - 4em) !important;
-//     width: 8em !important;
-//     height: 8em !important;
-//   }
-
-//   h1,
-//   h2,
-//   h3,
-//   h4,
-//   h5,
-//   h6,
-//   p {
-//     text-align: center;
-//   }
-//   .saegus-app-justify-start {
-//     justify-content: center !important;
-//   }
-
-//   .saegus-app-padding {
-//     padding: 2em !important;
-//   }
-// }
-
-// // Tablette (≥750px)
-// // @media (min-width: 750px) {
-  
-// // }
-
-// // Desktop (≥1000px)
-// @media (min-width: 1025px) {
-//   .col-12 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-11 {
-//     width: #{(11 * 100 / 12) + '%'}
-//   };
-//   .col-10 {
-//     width: #{(10 * 100 / 12) + '%'}
-//   };
-//   .col-9 {
-//     width: #{(9 * 100 / 12) + '%'}
-//   };
-//   .col-8 {
-//     width: #{(8 * 100 / 12) + '%'}
-//   };
-//   .col-7 {
-//     width: #{(7 * 100 / 12) + '%'}
-//   };
-//   .col-6 {
-//     width: #{(6 * 100 / 12) + '%'}
-//   };
-//   .col-5 {
-//     width: #{(5 * 100 / 12) + '%'}
-//   };
-//   .col-4 {
-//     width: #{(4 * 100 / 12) + '%'}
-//   };
-//   .col-3 {
-//     width: #{(3 * 100 / 12) + '%'}
-//   };
-//   .col-2 {
-//     width: #{(2 * 100 / 12) + '%'}
-//   };
-//   .col-1 {
-//     width: #{(1 * 100 / 12) + '%'}
-//   };
-// }
-
-// // Desktop HD (≥1200px)
-// @media (min-width: 1200px) {
-//   .col-12 {
-//     width: #{(12 * 100 / 12) + '%'}
-//   };
-//   .col-11 {
-//     width: #{(11 * 100 / 12) + '%'}
-//   };
-//   .col-10 {
-//     width: #{(10 * 100 / 12) + '%'}
-//   };
-//   .col-9 {
-//     width: #{(9 * 100 / 12) + '%'}
-//   };
-//   .col-8 {
-//     width: #{(8 * 100 / 12) + '%'}
-//   };
-//   .col-7 {
-//     width: #{(7 * 100 / 12) + '%'}
-//   };
-//   .col-6 {
-//     width: #{(6 * 100 / 12) + '%'}
-//   };
-//   .col-5 {
-//     width: #{(5 * 100 / 12) + '%'}
-//   };
-//   .col-4 {
-//     width: #{(4 * 100 / 12) + '%'}
-//   };
-//   .col-3 {
-//     width: #{(3 * 100 / 12) + '%'}
-//   };
-//   .col-2 {
-//     width: #{(2 * 100 / 12) + '%'}
-//   };
-//   .col-1 {
-//     width: #{(1 * 100 / 12) + '%'}
-//   };
-// }

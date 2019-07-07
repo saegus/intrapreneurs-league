@@ -12,13 +12,28 @@
   &--primary {
     background-color: $primary-bg-color;
     color: $secondary-color;
+    transition: ease-in-out .2s;
+    &:hover {
+      background-color: $fourth-bg-color;
+      color: $secondary-color;
+    }
   }
   &--secondary {
     background-color: $secondary-bg-color;
     color: $primary-color;
+    transition: ease-in-out .2s;
+    &:hover {
+      background-color: $fourth-bg-color;
+      color: $secondary-color;
+    }
   }
   &--third {
     background-color: $third-bg-color;
     color: $primary-color;
+    transition: ease-in-out .2s;
+    &:hover {
+      background-color: $fourth-bg-color;
+      color: $secondary-color;
+    }
   }
 }

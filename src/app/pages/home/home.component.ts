@@ -17,16 +17,16 @@ export class HomeComponent implements OnInit {
     left:[{
       displayAs: 'primary',
       type: 'text',
-      title: 'Identifier vos leviers & thématiques d’innovation'
+      title: 'layer#4.timeline#1.left.title'
     }],
     right:[{
       displayAs: 'secondary',
       type: 'list',
       title: null,
       values: [
-        'Immersion & synthèse : dresser un état des lieux des parties prenantes internes et externes(clients, partenaires, concurrents…)',
-        'Executive workshop : challenger & prioriser les thématiques et leviers identifiés',
-        'Crowthinking workshop : concrétiser tout de suite les pistes identifiées.',
+        'layer#4.timeline#1.right.list#1',
+        'layer#4.timeline#1.right.list#2',
+        'layer#4.timeline#1.right.list#3',
       ]
     }]
     },
@@ -38,10 +38,10 @@ export class HomeComponent implements OnInit {
           type: 'list',
           title: null,
           values: [
-            'Identifier le  bon format d’idéation(crowdthinking, boost - camp, Foreseeds…)',
-            'Définir les critères d’évaluation & de sélection des idées',
-            'Animer les ateliers ou la plateforme en ligne(facilitateurs ou community managers)',
-            'Synthétiser la matière issues des ateliers / plateformes.'
+            'layer#4.timeline#2.left.list#1',
+            'layer#4.timeline#2.left.list#2',
+            'layer#4.timeline#2.left.list#3',
+            'layer#4.timeline#2.left.list#4',
           ]
         },
         {
@@ -52,7 +52,7 @@ export class HomeComponent implements OnInit {
       right: [{
         displayAs: 'primary',
         type: 'text',
-        title: 'Animer un challenge d’idéation'
+        title: 'layer#4.timeline#2.right.title'
       }],
     },
     {
@@ -60,16 +60,16 @@ export class HomeComponent implements OnInit {
       left: [{
         displayAs: 'primary',
         type: 'text',
-        title: 'Convertir une idée a un MVP en moins de 3 mois'
+        title: 'layer#4.timeline#3.left.title'
       }],
       right: [{
         displayAs: 'secondary',
         type: 'list',
         title: null,
         values: [
-          'Définir la vision produit(problème, value proposition, cibles & business model)',
-          'Formuler les hypothèses et les prototypes permettant de les tester',
-          'Rédiger le backlog priorisé et le développer en sprint Agile',
+          'layer#4.timeline#3.right.list#1',
+          'layer#4.timeline#3.right.list#2',
+          'layer#4.timeline#3.right.list#3',
         ]
       }
     ]
@@ -81,16 +81,16 @@ export class HomeComponent implements OnInit {
         type: 'list',
         title: null,
         values: [
-          'Définition de la gouvernance de suivi & financement des projets(Growth boards)',
-          'Formalisation et animation du framework de coaching des équipes',
-          'Mise à disposition des compétences clés nécessaires aux projets',
-          'Animation du réseau interne et externe d’intrapreneurs et partenaires(think tank)',
+          'layer#4.timeline#4.left.list#1',
+          'layer#4.timeline#4.left.list#2',
+          'layer#4.timeline#4.left.list#3',
+          'layer#4.timeline#4.left.list#4',
         ]
       }],
       right: [{
         displayAs: 'primary',
         type: 'text',
-        title: '« Scaler » votre démarche intrapreneuriale'
+        title: 'layer#4.timeline#4.right.title'
       }],
     },
   ];
@@ -99,17 +99,17 @@ export class HomeComponent implements OnInit {
     {
       id: 0,
       illustration: null,
-      value: 'Je perds des parts de marché face à des jeunes entrants / startups, innover d’accord, mais par où commencer ?'
+      value: 'layer#2.testimonial#1.paragraph'
     },
     {
       id: 0,
       illustration: null,
-      value: "J'ai une idée de produit et service, mais il me manque les moyens / la méthodologie pour la faire aboutir."
+      value: 'layer#2.testimonial#2.paragraph'
     },
     {
       id: 0,
       illustration: null,
-      value: "Nous avons de nombreuses idées émanant des salariés, mais nous ne savons pas les exploiter."
+      value: 'layer#2.testimonial#3.paragraph'
     },
   ]
   constructor(private sanitizer: DomSanitizer) { }
@@ -117,6 +117,11 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.svg = this.sanitizer.bypassSecurityTrustHtml("");
   };
+
+  scroll(el: HTMLElement) {
+    console.log(el)
+    el.scrollIntoView({ behavior: "smooth" });
+  }
 
 
 }
