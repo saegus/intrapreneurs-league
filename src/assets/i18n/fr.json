@@ -106,6 +106,9 @@
     }
   },
   "layer#7": {
+    "title": "Contactez-nous !"
+  },
+  "layer#8": {
     "title": "Où nous trouver ?",
     "paragraph": "19, avenue Georges V, 75008 PARIS",
     "cta": "pierre.mallein@saegus.com"

@@ -1,0 +1,52 @@
+@import './colors.scss';
+
+.control-group {
+  margin: 1em 0;
+  label {
+    font-family: 'Gilroy';
+    font-weight: bold;
+  }
+  .controls {
+    height: 100%;
+
+    input, select, textarea {
+      width: 100%;
+      height: 3em;
+      border: solid 1px $primary-color;
+      background: $third-bg-color;
+      &:focus {
+        transition: .2s ease-in-out;
+        border-color: $third-color;
+      }
+    }
+    textarea {
+      height: 6em;
+    }
+    .form-control.error+div {
+      margin-top: -1px !important;
+      font-size: 0.8em;
+    }
+  }
+}
+.plz-consent {
+  font-size: .7em;
+}
+
+.plezi-submit-btn {
+  font-family: 'Gilroy';
+  font-weight: bold;
+  padding: 1em 2em;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8em;
+
+  background-color: $primary-bg-color;
+  color: $secondary-color;
+  transition: ease-in-out .2s;
+
+  &:hover {
+    background-color: $fourth-bg-color;
+    color: $secondary-color;
+  }
+}

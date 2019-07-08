@@ -199,7 +199,8 @@
   <app-layout [class]="'secondary'" >
     <div class="saegus-app-container saegus-app-container-column saegus-app-container-align-items-center col-12"
       #contactForm>
-        <form class="Form" id="foss-5d1f114cf42087542b380a58"></form>
+        <h2 class="saegus-app-text-justify-center col-12" [innerHTML]="'layer#7.title' | translate"></h2>
+        <form class="Form saegus-app-container saegus-app-container-column col-8" id="foss-5d1f114cf42087542b380a58"></form>
     </div>
   </app-layout>
 
@@ -211,10 +212,10 @@
           [inlineSVG]="environnement.production ? '/assets/images/IL-BLANC.svg' : '/../assets/images/IL-BLANC.svg'">
         </div>
       </div>
-      <h3 [innerHTML]="'layer#7.title' | translate"></h3>
-      <small [innerHTML]="'layer#7.paragraph' | translate"></small>
+      <h3 [innerHTML]="'layer#8.title' | translate"></h3>
+      <small [innerHTML]="'layer#8.paragraph' | translate"></small>
       <div class="saegus-lp-sm-spacer"></div>
-      <span [innerHTML]="'layer#7.cta' | translate"></span>
+      <span [innerHTML]="'layer#8.cta' | translate"></span>
     </div>
    </app-layout>
 </div>
