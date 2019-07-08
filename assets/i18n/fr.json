@@ -1,7 +1,7 @@
 {
   "header": {
     "logo": {
-      "baseline": "Lorem ipsum pour baseline"
+      "baseline": "Envision and execute together"
     },
     "left": {
       "title": "Donnez vie à vos idées innovantes<br/>en moins de 3 mois",
@@ -61,10 +61,10 @@
     },
     "timeline#3": {
       "left": {
-        "title":"Convertir une idé à un MVP en moins de 3 mois"
+        "title":"Convertir une idée à un MVP en moins de 3 mois"
       },
       "right": {
-        "list#1": "Définir la vision produit(problème, value proposition, cibles & business model)",
+        "list#1": "Définir la vision produit (problème, value proposition, cibles & business model)",
         "list#2": "Formuler les hypothèses et les prototypes permettant de les tester",
         "list#3": "Rédiger le backlog priorisé et le développer en sprint Agile"
       }
@@ -74,7 +74,7 @@
         "list#1": "Définition de la gouvernance de suivi & financement des projets (Growth boards)",
         "list#2": "Formalisation et animation du framework de coaching des équipes",
         "list#3": "Mise à disposition des compétences clés nécessaires aux projets",
-        "list#4": "Animation du réseau interne et externe d’intrapreneurs et partenaires(think tank)"
+        "list#4": "Animation du réseau interne et externe d’intrapreneurs et partenaires (think tank)"
       },
       "right": {
         "title": "« Scaler » votre démarche intrapreneuriale"
