@@ -103,6 +103,18 @@
   .saegus-lp-header-logo {
     justify-content: center !important;
   }
+  app-tile-image {
+    app-button {
+      position: absolute;
+      bottom: -1.5em;
+      left: 1em;
+      width: calc(100% - 2em);
+
+      button {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
