@@ -88,6 +88,7 @@
     }
   }
   .client-image {
+    height: 2em;
     margin: 1em 0;
   }
   .saegus-lp-row-to-column-mobile {
@@ -207,6 +208,7 @@
     }
   }
   .client-image {
+    height: 2em;
     margin: 1em 0;
   }
   .saegus-lp-row-to-column-mobile {
@@ -324,6 +326,9 @@
       }
     }
   }
+  .client-image {
+    height: 2em;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -397,6 +402,9 @@
       left: calc(50% - 6em);
     }
   }
+  .client-image {
+    height: 2em;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -467,5 +475,8 @@
       bottom: -1.5em;
       left: calc(50% - 6em);
     }
+  }
+  .client-image {
+    height: 2em;
   }
 }
