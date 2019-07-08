@@ -33,27 +33,27 @@
   },
   "layer#3": {
     "title": "Testez notre démarche !<br />Une heure de coaching gratuite avec un membre de notre équipe",
-    "paragraph": "Préparer un pitch, comprendre sa cible et son marché, dynamiser l’idéation, concrétiser le résultat d’un hackathon… Echangez avec Pierre, l’un de nos coachs Intracubation© ! <br /><br /> Une heure de coaching pour repartir avec quelques tips qui vont aideront à accélérer vos projets. L’occasion de nous rencontrer et de découvrir notre démarche Intrapreneurs League.",
+    "paragraph": "Préparer un pitch, comprendre sa cible et son marché, dynamiser l’idéation, concrétiser le résultat d’un hackathon… Echangez avec Pierre, l’un de nos coachs Intracubation© ! <br /><br /> Une heure de coaching pour repartir avec quelques tips qui vons aideront à accélérer vos projets. L’occasion de nous rencontrer et de découvrir notre démarche Intrapreneurs League.",
     "cta":"Prendre rendez-vous 🚀"
   },
   "layer#4": {
     "title": "Une démarche créée sur-mesure pour accélérer <br/> votre projet intrapreneurial",
     "timeline#1": {
       "left": {
-        "title": "Identifier vos leviers & thématiques d’innovation"
+        "title": "Passer de l'idée au MVP en moins de 3 mois"
       },
       "right": {
-        "list#1": "Immersion & synthèse : dresser un état des lieux des parties prenantes internes et externes(clients, partenaires, concurrents…)",
+        "list#1": "Immersion & synthèse : dresser un état des lieux des parties prenantes internes et externes (clients, partenaires, concurrents…)",
         "list#2": "Executive workshop : challenger & prioriser les thématiques et leviers identifiés",
         "list#3": "Crowthinking workshop : concrétiser tout de suite les pistes identifiées."
       }
     },
     "timeline#2": {
       "left": {
-        "list#1": "Identifier le  bon format d’idéation(crowdthinking, boost - camp, Foreseeds…)",
+        "list#1": "Identifier le  bon format d’idéation (crowdthinking, boost - camp, Foreseeds…)",
         "list#2": "Définir les critères d’évaluation & de sélection des idées",
-        "list#3": "Animer les ateliers ou la plateforme en ligne(facilitateurs ou community managers)",
-        "list#4": "Synthétiser la matière issues des ateliers / plateformes."
+        "list#3": "Animer les ateliers ou la plateforme en ligne (facilitateurs ou community managers)",
+        "list#4": "Synthétiser la matière issue des ateliers / plateformes."
       },
       "right": {
         "title":"Animer un challenge d’idéation"
@@ -61,7 +61,7 @@
     },
     "timeline#3": {
       "left": {
-        "title":"Convertir une idée a un MVP en moins de 3 mois"
+        "title":"Convertir une idé à un MVP en moins de 3 mois"
       },
       "right": {
         "list#1": "Définir la vision produit(problème, value proposition, cibles & business model)",
@@ -89,7 +89,7 @@
       "cta": "Demander une démo"
     },
     "right": {
-      "paragraph": "Plateforme de crowdfunding de projets interne à votre organisation, pour mutualiser ressources ou budget afin de faire aboutir vos produits ou services innovants."
+      "paragraph": "Plateforme de crowdfunding de projets interne à votre organisation, pour mutualiser ressources ou budget afin de faire aboutir vos produits ou services innovants.<br /><br />"
     }
   },
   "layer#6": {

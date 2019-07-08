@@ -44,10 +44,6 @@ export class HomeComponent implements OnInit {
             'layer#4.timeline#2.left.list#4',
           ]
         },
-        {
-          displayAs: 'secondary',
-          logo: this.environnement.production ? 'assets/images/Foreseeds_Logo.png' : '/assets/images/Foreseeds_Logo.png'
-        }
       ],
       right: [{
         displayAs: 'primary',
