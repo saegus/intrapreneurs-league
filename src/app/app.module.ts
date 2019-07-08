@@ -18,6 +18,8 @@ import { TileImageComponent } from './components/organisms/tile-image/tile-image
 import { JumboTileComponent } from './components/layouts/jumbo-tile/jumbo-tile.component';
 import { ButtonComponent } from './components/atoms/button/button.component';
 
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,5 +51,5 @@ import { ButtonComponent } from './components/atoms/button/button.component';
 export class AppModule { }
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http, environment.production ? './assets/i18n/' : '../assets/i18n/');
 }
