@@ -10,17 +10,20 @@
         'saegus-app-container': true
       }">
       <div class="col-6 saegus-lp-padding-mobile">
-        <app-tile [class]="point.displayAs" [position]="'timeline-left'" *ngFor="let point of p.left; let j = index">
-          <div class="col-12 saegus-app-text-justify-center saegus-app-container-justify-center">
-            <h3 class="saegus-lp-body--contrast" [innerHTML]="point.title | translate"></h3>
-            <img class="saegus-lp-tile-logo" [src]="point.logo" *ngIf="point.logo" />
-            <ol *ngIf="point.type == 'list'">
-              <li *ngFor="let x of point.values; let k = index">
-                <span [innerHTML]="x | translate"></span>
-              </li>
-            </ol>
-          </div>
-        </app-tile>
+        <div *ngFor="let point of p.left; let j = index" class="cd-timeline__block cd-timeline--hidden">
+          <app-tile [class]="point.displayAs" [position]="'timeline-left'" >
+            <div
+              class=" col-12 saegus-app-text-justify-center saegus-app-container-justify-center">
+              <h3 class="saegus-lp-body--contrast" [innerHTML]="point.title | translate"></h3>
+              <img class="saegus-lp-tile-logo" [src]="point.logo" *ngIf="point.logo" />
+              <ol *ngIf="point.type == 'list'">
+                <li *ngFor="let x of point.values; let k = index">
+                  <span [innerHTML]="x | translate"></span>
+                </li>
+              </ol>
+            </div>
+          </app-tile>
+        </div>
       </div>
     </div>
     <div 
@@ -32,20 +35,21 @@
       'saegus-app-container': true
       }">
       <div class="col-6 saegus-lp-padding-mobile">
-        <app-tile 
-          [class]="point.displayAs" 
-          [position]="'timeline-right'"
-          *ngFor="let point of p.right; let l = index">
-          <div class="col-12 saegus-app-text-justify-center saegus-app-container-justify-center">
-            <h3 class="saegus-lp-body--contrast" [innerHTML]="point.title | translate"></h3>
-            <img class="saegus-lp-tile-logo" [src]="point.logo" *ngIf="point.logo" />
-            <ol *ngIf="point.type == 'list'">
-              <li *ngFor="let x of point.values; let m = index">
-                <span [innerHTML]="x | translate"></span>
-              </li>
-            </ol>
-          </div>
-        </app-tile>
+        <div *ngFor="let point of p.right; let j = index" class="cd-timeline__block cd-timeline--hidden">
+          <app-tile 
+            [class]="point.displayAs" 
+            [position]="'timeline-right'">
+            <div class="col-12 saegus-app-text-justify-center saegus-app-container-justify-center">
+              <h3 class="saegus-lp-body--contrast" [innerHTML]="point.title | translate"></h3>
+              <img class="saegus-lp-tile-logo" [src]="point.logo" *ngIf="point.logo" />
+              <ol *ngIf="point.type == 'list'">
+                <li *ngFor="let x of point.values; let m = index">
+                  <span [innerHTML]="x | translate"></span>
+                </li>
+              </ol>
+            </div>
+          </app-tile>
+        </div>
       </div>
     </div>
   </div>
