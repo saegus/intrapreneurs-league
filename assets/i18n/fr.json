@@ -1,0 +1,116 @@
+{
+  "header": {
+    "logo": {
+      "baseline": "Lorem ipsum pour baseline"
+    },
+    "left": {
+      "title": "Donnez vie à vos idées innovantes<br/>en moins de 3 mois",
+      "paragraph": "Notre promesse ? Donner aux intrapreneurs les moyens de concrétiser rapidement leurs idées.",
+      "cta": "Contacter un coach"
+    }
+  },
+  "layer#1": {
+    "left": {
+      "title" : "Tout le monde peut devenir <br /> un intrapreneur.",
+      "paragraph": "C’est au travers de nos propres expériences intrapreneuriales que nous nous sommes forgés cette conviction : qui mieux que les personnes qui vivent et côtoient les problèmes pour les résoudre ?<br /><br />Bien que porteurs de vision, les intrapreneurs ont besoin d’aide dans leur exécution, aussi bien en termes de méthodologie que d’outillage : c’est pour cela que nous avons créé l’Intrapreneurs League."
+    },
+    "right": {
+      "title" : " L’Intrapreneurs League,<br />c’est quoi ?",
+      "paragraph": "C’est une équipe de coachs, qui a développé une méthode – l’Intracubation© - destinée à cadencer, accélérer et outiller toutes les phases de conception de nouveaux produits & services par vos intrapreneurs : de l’idéation au passage à l’échelle, en passant par la priorisation et le co-financement des initiatives."
+    }
+  },
+  "layer#2": {
+    "title": "Nous l’avons vécu … et nous l’avons résolu",
+    "testimonial#1": {
+      "paragraph": "Je perds des parts de marché face à des jeunes entrants / startups, innover d’accord, mais par où commencer ?"
+    },
+    "testimonial#2": {
+      "paragraph": "J'ai une idée de produit et service, mais il me manque les moyens / la méthodologie pour la faire aboutir."
+    },
+    "testimonial#3": {
+      "paragraph": "Nous avons de nombreuses idées émanant des salariés, mais nous ne savons pas les exploiter."
+    }
+  },
+  "layer#3": {
+    "title": "Testez notre démarche !<br />Une heure de coaching gratuite avec un membre de notre équipe",
+    "paragraph": "Préparer un pitch, comprendre sa cible et son marché, dynamiser l’idéation, concrétiser le résultat d’un hackathon… Echangez avec Pierre, l’un de nos coachs Intracubation© ! <br /><br /> Une heure de coaching pour repartir avec quelques tips qui vont aideront à accélérer vos projets. L’occasion de nous rencontrer et de découvrir notre démarche Intrapreneurs League.",
+    "cta":"Prendre rendez-vous 🚀"
+  },
+  "layer#4": {
+    "title": "Une démarche créée sur-mesure pour accélérer <br/> votre projet intrapreneurial",
+    "timeline#1": {
+      "left": {
+        "title": "Identifier vos leviers & thématiques d’innovation"
+      },
+      "right": {
+        "list#1": "Immersion & synthèse : dresser un état des lieux des parties prenantes internes et externes(clients, partenaires, concurrents…)",
+        "list#2": "Executive workshop : challenger & prioriser les thématiques et leviers identifiés",
+        "list#3": "Crowthinking workshop : concrétiser tout de suite les pistes identifiées."
+      }
+    },
+    "timeline#2": {
+      "left": {
+        "list#1": "Identifier le  bon format d’idéation(crowdthinking, boost - camp, Foreseeds…)",
+        "list#2": "Définir les critères d’évaluation & de sélection des idées",
+        "list#3": "Animer les ateliers ou la plateforme en ligne(facilitateurs ou community managers)",
+        "list#4": "Synthétiser la matière issues des ateliers / plateformes."
+      },
+      "right": {
+        "title":"Animer un challenge d’idéation"
+      }
+    },
+    "timeline#3": {
+      "left": {
+        "title":"Convertir une idée a un MVP en moins de 3 mois"
+      },
+      "right": {
+        "list#1": "Définir la vision produit(problème, value proposition, cibles & business model)",
+        "list#2": "Formuler les hypothèses et les prototypes permettant de les tester",
+        "list#3": "Rédiger le backlog priorisé et le développer en sprint Agile"
+      }
+    },
+    "timeline#4": {
+      "left": {
+        "list#1": "Définition de la gouvernance de suivi & financement des projets (Growth boards)",
+        "list#2": "Formalisation et animation du framework de coaching des équipes",
+        "list#3": "Mise à disposition des compétences clés nécessaires aux projets",
+        "list#4": "Animation du réseau interne et externe d’intrapreneurs et partenaires(think tank)"
+      },
+      "right": {
+        "title": "« Scaler » votre démarche intrapreneuriale"
+      }
+    },
+    "cta": "Prendre rendez-vous 🚀"
+  },
+  "layer#5": {
+    "title": "Nos accélérateurs technologiques",
+    "left": {
+      "paragraph": "Cadrage agile, définition de roadmap, product management... Impliquez vous utilisateurs, dès aujourd'hui, dans le design des produits et services qu'ils utiliseront demain.",
+      "cta": "Demander une démo"
+    },
+    "right": {
+      "paragraph": "Plateforme de crowdfunding de projets interne à votre organisation, pour mutualiser ressources ou budget afin de faire aboutir vos produits ou services innovants."
+    }
+  },
+  "layer#6": {
+    "title": "Qui sommes nous ?<br /> 👀",
+    "row#1": {
+      "title": "Notre passion",
+      "paragraph": "Nous sommes des coachs, des intrapreneurs, des experts de l’Agile, du Design Thinking ou encore du Lean Start-up, capables de choisir pour chaque contexte la meilleure méthodologie et les bons outils."
+    },
+    "row#2": {
+      "title": "Notre team"
+    },
+    "row#3": {
+      "title": "Nos clients"
+    }
+  },
+  "layer#7": {
+    "title": "Contactez-nous !"
+  },
+  "layer#8": {
+    "title": "Où nous trouver ?",
+    "paragraph": "19, avenue Georges V, 75008 PARIS",
+    "cta": "pierre.mallein@saegus.com"
+  }
+}
