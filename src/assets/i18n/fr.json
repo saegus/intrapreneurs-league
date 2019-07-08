@@ -111,6 +111,10 @@
   "layer#8": {
     "title": "Où nous trouver ?",
     "paragraph": "19, avenue Georges V, 75008 PARIS",
-    "cta": "pierre.mallein@saegus.com"
+    "cta": "pierre.mallein@saegus.com",
+    "logo": {
+      "title": "By Saegus",
+      "urlRedirection": "http://saegus.com/"
+    }
   }
 }
