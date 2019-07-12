@@ -1,7 +1,7 @@
 {
   "header": {
     "logo": {
-      "baseline": "Envision and execute together"
+      "baseline": "Envision and build together"
     },
     "left": {
       "title": "Donnez vie à vos idées innovantes<br/>en moins de 3 mois",
@@ -85,7 +85,7 @@
   "layer#5": {
     "title": "Nos accélérateurs technologiques",
     "left": {
-      "paragraph": "Cadrage agile, définition de roadmap, product management... Impliquez vous utilisateurs, dès aujourd'hui, dans le design des produits et services qu'ils utiliseront demain.",
+      "paragraph": "Cadrage agile, définition de roadmap, product management... Impliquez vos utilisateurs, dès aujourd'hui, dans le design des produits et services qu'ils utiliseront demain.",
       "cta": "Demander une démo"
     },
     "right": {
@@ -113,7 +113,7 @@
     "paragraph": "19, avenue Georges V, 75008 PARIS",
     "cta": "pierre.mallein@saegus.com",
     "logo": {
-      "title": "By Saegus",
+      "title": "By",
       "urlRedirection": "http://saegus.com/"
     }
   }

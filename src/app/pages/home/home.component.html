@@ -127,9 +127,9 @@
         </div>
         <div
           class="saegus-lp-body col-6 saegus-app-padding saegus-app-container saegus-app-container-column saegus-app-container-align-items-center">
-          <img
-            class="saegus-lp-special-height_2"
-            [src]="environnement.production ? 'assets/images/cross.png' : '/assets/images/cross.png'" />
+          <div class="saegus-lp-special-height_2" aria-label="il-logo"
+            [inlineSVG]="environnement.production ? '/assets/images/svg/cross_logo.svg' : '/../assets/images/svg/cross_logo.svg'">
+          </div>
           <div class="saegus-lp-sm-spacer"></div>
           <span>
             <p class="saegus-app-text-justify-center" [innerHTML]="'layer#5.right.paragraph' | translate "></p>
@@ -218,11 +218,13 @@
       <div class="saegus-lp-sm-spacer"></div>
       <a href="mailto:{{ 'layer#8.cta' | translate }}" [innerHTML]="'layer#8.cta' | translate"></a>
       <div class="saegus-lp-logo-footer-right">
-        <div class="logo-footer" aria-label="il-logo"
-          [inlineSVG]="environnement.production ? '/assets/images/hero-gray-Saegus.svg' :
-          '/../assets/images/hero-gray-Saegus.svg'">
-        </div>
-        <a [href]="'layer#8.logo.urlRedirection' | translate" target="_blank" [innerHTML]="'layer#8.logo.title' | translate"></a>
+        <a [href]="'layer#8.logo.urlRedirection' | translate" target="_blank">
+          <span [innerHTML]="'layer#8.logo.title' | translate"></span>
+          <div class="logo-footer" aria-label="saegus-logo"
+            [inlineSVG]="environnement.production ? '/assets/images/logo-saegus.svg' :
+            '/../assets/images/logo-saegus.svg'"> 
+          </div>
+        </a> 
       </div>
     </div>
    </app-layout>

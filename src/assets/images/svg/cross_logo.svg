@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="25px" viewBox="0 0 112 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="START_HP" transform="translate(-125.000000, -21.000000)" fill="#557FD3">
+            <g id="Group-15">
+                <g id="Group" transform="translate(125.000000, 18.000000)">
+                    <text id="CROSS" font-family="AvenirNext-Bold, Avenir Next" font-size="24" font-weight="bold">
+                        <tspan x="31.1377778" y="24">CROSS</tspan>
+                    </text>
+                    <path d="M14.2507351,15.1717617 L19.0719177,10.3505791 L17.0380214,8.31668283 L12.2168388,13.1378654 L7.37422876,8.29525535 L5.34933207,10.320152 L10.1919421,15.1627621 L5.37075955,19.9839447 L7.40465578,22.017841 L12.2258384,17.1966584 L17.0684485,22.0392684 L19.0933451,20.0143717 L14.2507351,15.1717617 Z M0,4.49570414 C0,3.66964955 0.670991131,3 1.50235171,3 L23.1065372,3 C23.9362631,3 24.6088889,3.68084101 24.6088889,4.49570414 L24.6088889,26.0042959 C24.6088889,26.8303504 23.9378978,27.5 23.1065372,27.5 L1.50235171,27.5 C0.672625772,27.5 0,26.819159 0,26.0042959 L0,4.49570414 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
